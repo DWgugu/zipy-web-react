@@ -1,0 +1,52 @@
+.login_page {
+    color: black;
+    background-color: #fff;
+    padding: 0;
+    margin: auto 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.form_page {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 80%;
+}
+
+.form_input div {
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+
+.form_input div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_input button {
+    width: 80%;
+    background-color: #666AF6;
+}
+
+.form_input button:hover {
+    background-color: #7579f8;
+}
+
+.illustration {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #666AF6;
+}
+
+.illustration img {
+    width: 70%;
+}
