@@ -9,6 +9,7 @@ import Contact from './routes/Contact'
 import ErrorPage from './routes/ErrorPage'
 import Login from './routes/auth/Login'
 import App from './App'
+import AuthProvider from './contexts/Auth/AuthProvider'
 import './index.css'
 
 // 1 - Configurando router
@@ -36,6 +37,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} /> 
+    </AuthProvider> 
   </React.StrictMode>,
 )
