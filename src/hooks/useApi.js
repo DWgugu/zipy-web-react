@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API
+    baseURL: import.meta.env.REACT_APP_API
 });
 
 const useApi = () => ({
@@ -11,4 +11,4 @@ const useApi = () => ({
     } 
 })
 
-export default useApi();
+export default useApi;
